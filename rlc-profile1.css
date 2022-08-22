@@ -28,6 +28,10 @@ img#ctl00_oCPH1_imgPicture {
     border-radius: 100px;
 }
 
+#ctl00_oCPH1_lblInterests{
+
+}
+
 img {
     border: 20px;
     border-radius: 100px;
@@ -65,7 +69,11 @@ div.SCMainHeaderPanel {
     color: transparent;
 }
 
-#ctl00_oCPH1_lblInterests{
+#ctl00_oCPH1_lblInterests, 
+#ctl00_oCPH1_lblWebsites,
+#ctl00_oCPH1_lblMusic,
+#ctl00_oCPH1_lblMovies,
+#ctl00_oCPH1_lblBooks {
     font-color: #994b88;
 }
 
