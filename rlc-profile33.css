@@ -189,7 +189,7 @@ div.MPToolsBar {
 }
 
 /* Apply styles to button wrappers */
-.button-wrapper {
+.div {
     margin: 10px;
     display: inline-block;
     border-radius: 5px;
@@ -203,7 +203,7 @@ div.MPToolsBar {
     text-shadow: 1px 1px #000;
 }
 
-.button-wrapper img {
+.div img {
     max-width: 100%;
     height: auto;
     display: block;
