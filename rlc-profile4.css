@@ -1,165 +1,1314 @@
-<style type="text/css">
-
-/*Cleaner*/
-#shop header #header {
-    display: none !important;
-}
-
 html {
-    background: none;
-}
-
-body table {
-    background-color: transparent
-}
-
-body table td {
-    background-color: transparent;
+    background: #37383b url('Images/BG-Main.gif') center top no-repeat;
 }
 
 body {
-    background: url("https: //www.utherverse.com/bucket/726f9d9a-a2f5-498d-85f6-c6f0bee4b553") repeat scroll 50% 50% #000;
-    background-attachment: fixed;
-}
-
-
-/*img-radius*/
-img#ctl00_oCPH1_imgPicture {
-    border-radius: 100px;
+    background: #37383b url('Images/BG-Main.gif') center top no-repeat;
+    color: #333;
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    font-size: 10px;
+    font-family: verdana, arial, sans-serif, helvetica;
 }
 
 img {
-    border: 20px;
-    border-radius: 100px;
+    border: 0px;
+}
+
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+table {
+    font: inherit;
+    font-size: 100%;
+    color: inherit;
+}
+
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 a:link,
 a:active,
 a:visited {
-    color: #DDDDDD !important;
+    text-decoration: none;
+    color: #333333;
 }
 
 a:hover {
-    color: #e900b6 !important;
+    color: #FF0000;
+    text-decoration: underline;
 }
 
-/*Eraser*/
-div.SCMainAdSpace,
-div.SCMainHeaderPanel {
-    display: none;
-}
-
-/*a#ctl00_oCPH1_lnkProfPicLink {visibility:hidden;}*/
-/* Tool Bar */
-div.MPToolsBar {
-    margin: 0 0 0 0;
-    position: relative;
-    left: 370px;
-    width: 604px;
-    top: -550px;
-    /*background:url(#) no-repeat transparent !important*/
-    ;
-    color: #EEE !important;
-    text-shadow: 2px 3px 2px #000;
-    height: 32px;
-    padding-top: 35px;
-}
-
-input.MPSearchText {
-    width: 142px;
-}
-
-.mpusername {
-    margin-left: 45px;
-}
-
-#ctl00_pnlTools>form>div {
-    float: left !important;
-}
-
-/*a.MainNavLink,a.MainNavLink:visited{color:#DDD !important; text-shadow:2px 3px 2px #000;font-family:"Macondo";margin-right:6px;font-size:12px;}
-a.MainNavLink:hover{color:#7645c2 !important;}*/
+/* Header and Footer Styles */
 a.MainNavLink {
-    text-shadow: 2px 3px 2px #000;
-    font-family: "Macondo";
-    margin-right: 6px;
+    font-size: 10px;
+    padding: 2px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.MainNavLink:link,
+a.MainNavLink:active,
+a.MainNavLink:visited {
+    color: #333333;
+}
+
+a.MainNavLink:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*a[href="/news"].MainNavLink::after {
+  content: "NEW!";
+  margin-left: .5em;
+  color: red;
+}*/
+
+a.SpecialNavLink {
+    font-size: 10px;
+    padding: 2px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.SpecialNavLink:link,
+a.SpecialNavLink:active,
+a.SpecialNavLink:visited {
+    color: #FFFF00;
+}
+
+a.SpecialNavLink:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+a.AuthLink {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+a.AuthLink:link,
+a.AuthLink:active,
+a.AuthLink:visited {
+    color: #8d8788;
+}
+
+a.AuthLink:hover {
+    color: #000;
+}
+
+a.FooterLink {
+    font-size: 8pt;
+    text-decoration: none;
+}
+
+a.FooterLink:link,
+a.FooterLink:active,
+a.FooterLink:visited {
+    color: #dad7d8;
+}
+
+a.FooterLink:hover {
+    color: #f5ad3a;
+    text-decoration: underline
+}
+
+.DGListHeader {
+    background-color: #c8bfc0;
+    border-bottom: 1px solid #202020;
+    border-right: 1px solid #988f90;
+    font-weight: bold;
+    padding: 1px 5px 1px 5px;
+}
+
+.DGListData {
+    padding: 1px 5px 1px 5px;
+    border-bottom: 1px solid #E0E0E8;
+    border-right: 1px solid #E0E0E8;
+}
+
+.DGListPager {
+    background-color: #fff4ca;
+    padding: 1px 0px 1px 0px;
+}
+
+/* Global Style Elements */
+.GlassBarBlack {
+    background: url('/images/t1/black-bg.gif');
+    background-color: #121212;
+    padding-top: 2px;
+    font-weight: bold;
+    background-repeat: repeat-x;
+    height: 18px;
+    color: #e0e5f2;
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 13px;
+}
+
+.GlassBarBlue {
+    background: url('/images/t1/blue-bg.gif');
+    background-color: #4f68ff;
+    padding-top: 2px;
+    font-weight: bold;
+    background-repeat: repeat-x;
+    height: 18px;
+    color: #e0e5f2;
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 13px;
+}
+
+.GlassBarRed {
+    background: url('/images/t1/red-bg.gif');
+    background-color: #8f2d37;
+    padding-top: 2px;
+    font-weight: bold;
+    background-repeat: repeat-x;
+    height: 18px;
+    color: #e0e5f2;
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 13px;
+}
+
+.GlassBarBlackF {
+    background: url('/images/t1/black-full-380.gif');
+    padding-top: 2px;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    height: 20px;
+    color: #e0e5f2;
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 13px;
+}
+
+.SCSubTitle {
+    margin: 15px 10% 5px 10%;
+    padding-left: 20px;
+    border-bottom: 1px solid #D0D0D0;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "MS Sans Serif", sans-serif;
+}
+
+.SCInfoMessage {
+    margin: 10px 10% 10px 10%;
+    padding: 5px;
+    background-color: #E0E0E0;
+    color: #000;
+    border: 1px solid #808080;
+    font-weight: bold;
+    text-align: center;
+    font-family: "MS Sans Serif", sans-serif;
     font-size: 12px;
 }
 
-/* content here */
-div#ctl00_oMasterPanelSizer {
-    margin-top: 327px !important;
+.SCStatusMessage {
+    margin: 10px 10% 10px 10%;
+    padding: 5px;
+    background-color: #E0F0E0;
+    color: #080;
+    border: 1px solid #80A080;
+    font-weight: bold;
+    text-align: center;
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 12px;
 }
 
-/*titlebars*/
-table#MSCodesFixer>tbody>tr>td>table>tbody:first-of-type>tr>td>div:first-of-type,
-#ctl00_oCPH1_tbDetailsSection>tr>td>div:first-of-type,
-#ctl00_oCPH1_pnlSexyStuff>div:first-of-type,
-#ctl00_oCPH1_pnlWebGifts>div:first-of-type,
-#ctl00_oCPH1_tbDetailsSection>tr>td:last-of-type>div:nth-of-type(3),
-#ctl00_oCPH1_tbFriendsSection>tr:first-of-type>td>div,
-#ctl00_oCPH1_tbCommentsSection>tr:first-of-type>td>div,
-div.MPToolsBar {
-    border-radius: 5px 5px 0 0;
-    padding-left: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    background: rgba(0, 0, 0, 0.25) !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px #000, inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px #000, inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    -o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px #000, inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px #000, inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px #000, inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px #000, inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px #000, inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px #000, inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-    font-size: 14px;
-    text-shadow: 0px 0px #000;
+.SCErrorMessage {
+    margin: 10px 10% 10px 10%;
+    padding: 5px;
+    background-color: #F0E0E0;
+    color: #800;
+    border: 1px solid #A08080;
+    font-weight: bold;
+    text-align: center;
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 12px;
 }
 
-table#MSCodesFixer>tbody>tr>td>table>tbody:first-of-type>tr>td>div:first-of-type>img,
-#ctl00_oCPH1_tbDetailsSection>tr>td>div:first-of-type>img,
-#ctl00_oCPH1_pnlSexyStuff>div:first-of-type>img,
-#ctl00_oCPH1_pnlWebGifts>div:first-of-type>img,
-#ctl00_oCPH1_tbDetailsSection>tr>td:last-of-type>div:nth-of-type(3)>img,
-#ctl00_oCPH1_tbFriendsSection>tr:first-of-type>td>div>img,
-#ctl00_oCPH1_tbCommentsSection>tr:first-of-type>td>div>img {
+.SortHeader {
+    background: #000000 url('/images/t1/black-bg.gif');
+    height: 20px;
+    color: #FFFFFF;
+    padding: 0px 5px 0px 5px;
+}
+
+a.SortHeaderLink {
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+a.SortHeaderLink:link,
+a.SortHeaderLink:active,
+a.SortHeaderLink:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.SortHeaderLink:hover {
+    color: #FFFF00;
+    text-decoration: none;
+}
+
+.EMailListRow {
+    border-bottom: #e0e0e0 1px solid;
+    padding: 0px 5px 0px 5px;
+}
+
+/* Blog Styles */
+.SCBlogTable {
+    width: 560px;
+    margin: 0px auto 20px auto;
+}
+
+.SCBlogHeader {
+    border-bottom: 1px solid #8f2d37;
+    font-weight: bold;
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 13px;
+}
+
+.SCBlogBody {
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.SCBlogSubject {
+    margin: 5px auto 5px auto;
+    font-weight: bold;
+}
+
+.SCBlogLinks {
+    padding: 2px;
+    border-top: 1px solid #D0D0D0;
+    border-bottom: 1px solid #D0D0D0;
+    color: #CCC;
+}
+
+.SCCommentProf {
+    text-align: center;
+    vertical-align: top;
+    height: 60px;
+}
+
+.SCCommentDate {
+    height: 15px;
+    font-weight: bold;
+    padding-left: 5px;
+    vertical-align: top;
+}
+
+.SCCommentBody {
+    vertical-align: top;
+    padding-left: 5px;
+    height: 30px;
+}
+
+.SCCommentTools {
+    height: 15px;
+    padding-left: 5px;
+    color: #CCC;
+    vertical-align: bottom;
+}
+
+/* Misc Styles */
+.BlogField {
+    border: 1px solid #5b4648;
+    font-size: 9pt;
+    padding: 2px;
+}
+
+/* Old Styles */
+DIV.menu2 A {
+    color: #800000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+DIV.menu2 A:link {
+    color: #800000;
+    font-weight: bold;
+    text-decoration: none
+}
+
+DIV.menu2 A:visited {
+    color: #800000;
+    font-weight: bold;
+    text-decoration: none
+}
+
+DIV.menu2 A:hover {
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+}
+
+.Fields {
+    border: 1px #666666 groove;
+    background-color: #F5F5F5;
+    font-size: 11px;
+    background-position: center center;
+    font-weight: bold;
+    color: #606060;
+    padding: 2px 1px 3px 1px;
+}
+
+.Buttons {
+    border: outset 1px #D1D1D1;
+    background-color: #F1F1F1;
+    font-size: xx-small;
+    background-position: center center;
+    font-weight: bold;
+    padding: 1px 5px;
+    color: #333333;
+}
+
+A.bodylink:link,
+A.bodylink:visited,
+A.bodylink:active {
+    font-size: 8pt;
+    color: #800000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+A.bodylink:hover {
+    font-size: 8pt;
+    color: #FF0000;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+A.bodylink2:link,
+A.bodylink2:visited,
+A.bodylink2:active {
+    font-size: 9pt;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+A.bodylink2:hover {
+    font-size: 9pt;
+    color: #C0C0C0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.menu {
+    font-size: 9pt;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu2 {
+    font-size: 9pt;
+    color: #800000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu3 {
+    font-size: 9pt;
+    color: #FF0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu4 {
+    font-size: 7pt;
+    color: #800000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img.scaled30 {
+    width: 30px;
+    height: auto;
+}
+
+img.scaled50 {
+    width: 50px;
+    height: auto;
+}
+
+img.scaled80 {
+    width: 80px;
+    height: auto;
+}
+
+img.scaled100 {
+    width: 100px;
+    height: auto;
+}
+
+img.scaled120 {
+    width: 120px;
+    height: auto;
+}
+
+img.scaled160 {
+    width: 160px;
+    height: auto;
+}
+
+img.scaled150 {
+    width: 150px;
+    height: auto;
+}
+
+img.scaled300 {
+    width: 300px;
+    height: auto;
+}
+
+img.scaled500 {
+    width: 500px;
+    height: auto;
+    max-width: 500px;
+    width: auto;
+}
+
+.adHeadline {
+    font: bold 8pt Arial;
+    text-decoration: underline;
+    color: blue;
+}
+
+.adText {
+    font: normal 8pt Arial;
+    text-decoration: none;
+    color: black;
+}
+
+/* ---------------------------------- */
+/* New Social Center Skinnable Styles */
+/* ---------------------------------- */
+
+/* Master Page Styles */
+.MPHeaderTable {
+    background: #d1d1d1 url('Images/header-bkg.gif') repeat-x;
+    width: 100%;
+    height: 100px;
+}
+
+.MPHeaderTitleCell {
+    height: 79px;
+}
+
+.MPHeaderNavCell {
+    height: 21px;
+}
+
+.MPNavMenuTable {}
+
+.MPNavMenuStartCap {
+    height: 21px;
+    width: 71px;
+    background: transparent url('Images/header-nav-cap.gif') no-repeat bottom right;
+}
+
+.MPNavMenuItem {
+    height: 21px;
+    padding: 0px 3px 0px 3px;
+    background: transparent url('Images/header-nav-bkg.gif') repeat-x top left;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.MPNavMenuEndCap {
+    height: 21px;
+    width: 1px;
+    background: transparent url('Images/header-nav-bkg.gif') repeat-x;
+}
+
+.MPToolsBar {
+    height: 22px;
+    padding: 5px 0px 3px 0px;
+    margin-bottom: 0px;
+    background: #cccccc url('Images/BG-MainToolBar.png') repeat-x;
+}
+
+.MPSearchText {
+    font-size: 11px;
+    border: 1px #666666 groove;
+    width: 275px;
+    height: 15px;
+    padding: 1px 3px 1px 3px;
+}
+
+.MPFooterCopy {
+    font-size: 8pt;
+    text-align: center;
+    color: #808088;
+    font-weight: bold;
+    margin: 5px auto 15px auto;
+}
+
+.MPFooterCopy a {
+    color: #808088;
+}
+
+.MPUsername {
+    margin: 2px 5px auto 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Content Panel Styles */
+.SCMainBackdrop {
+    background: #FFFFFF;
+}
+
+.SCLoginBackdrop {
+    background: #FFFFFF url('Images/BG-login.jpg') no-repeat 0px 0px;
+}
+
+.SCMainContent {}
+
+.SCMainAdSpace {}
+
+.SCMainHeaderPanel {}
+
+.SCMainFooter {
+    background: #252525;
+}
+
+.SCFooterSep {
+    color: #686868;
+}
+
+/* login page styles */
+.SCLoginHeader {
+    border: 1px solid #333333;
+    width: 300px;
+    background: #000000;
+}
+
+.SCLoginBody {
+    border: 1px solid #333333;
+    width: 300px;
+    background: url('Images/BG-LoginPanel.png') repeat-x;
+}
+
+.SCLoginDesc {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: right;
+    padding: 1px 3px;
+}
+
+.SCLoginData {
+    color: #FFFFFF;
+    padding: 2px 3px;
+}
+
+.SCLoginRow {
+    padding: 0.5rem 1rem;
+}
+
+.SCLoginTable {
+    text-align: left;
+    margin: 10px auto;
+}
+
+ul.SCLoginBullet {
+    font-size: 1.0em;
+    color: #FFFFFF;
+    list-style-position: inside;
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+a.SCLoginLink {
+    text-decoration: none;
+}
+
+a.SCLoginLink:link,
+a.SCLoginLink:active,
+a.SCLoginLink:visited {
+    color: #A0A0A0;
+}
+
+a.SCLoginLink:hover {
+    color: #FF0000;
+}
+
+.SCLoginField {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.SCLoginField:focus {
+    box-shadow: 0 0 0 0.2rem rgba(85, 115, 169, .25);
+    outline: 0;
+    border-color: #d4aaaa;
+}
+
+/* Tabs at the top of most pages */
+.SCTabsBox {
+    margin: auto auto 10px auto;
+    background: #333333 url('Images/BG-SCTabsBox.gif');
+    border: 1px solid #cccccc;
+    padding: 1px;
+}
+
+.SCTabSet {
+    position: relative;
+    left: 40px;
+}
+
+.SCTabDefault,
+.SCTabOver,
+.SCTabSelected {
+    width: 100px;
+    height: 30px;
+    background-color: #2c2c2c;
+    vertical-align: middle;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+.SCTabDefault {
+    background-position: 0px 0px;
+}
+
+.SCTabOver {
+    background-position: 0px 0px;
+}
+
+.SCTabSelected {
+    background-position: 0px 0px;
+}
+
+.SCTabSetProfile {
+    position: relative;
+    left: 100px;
+    top: 3px;
+    margin-bottom: 6px;
+}
+
+.SCTabSetMessage {
+    position: relative;
+    left: 320px;
+    top: 3px;
+    margin-bottom: 6px;
+}
+
+.SCSubTabSelect {
+    background: #45474a url('Images/SCSubTab-Select.png') repeat-x;
+    height: 20px;
+    color: #FFFFFF;
+    font-size: 9px;
+    font-weight: normal;
+    padding: 3px 6px 3px 6px;
+    margin: 0px 1px 0px 1px;
+}
+
+a.SCSubTabLink:link,
+a.SCSubTabLink:visited,
+a.SCSubTabLink:active {
+    background: #45474a url('Images/SCSubTab-Normal.png') repeat-x;
+    height: 20px;
+    color: #fbd35f;
+    font-size: 9px;
+    font-weight: normal;
+    padding: 3px 6px 3px 6px;
+    margin: 0px 1px 0px 1px;
+    text-decoration: none;
+}
+
+a.SCSubTabLink:hover {
+    background: #45474a url('Images/SCSubTab-Hover.png') repeat-x;
+    height: 20px;
+    color: #FFFFFF;
+    font-size: 9px;
+    font-weight: normal;
+    padding: 3px 6px 3px 6px;
+    margin: 0px 1px 0px 1px;
+    text-decoration: none;
+}
+
+/* Generic panels for use here and there */
+.SCPanelHeaderBG {
+    height: 20px;
+    background: #E0E0E0 url('Images/Panel-Header-bg.png') repeat-x;
+}
+
+.SCPanelHeaderFG {
+    height: 20px;
+    background: transparent url('Images/Panel-Header-icon.png') no-repeat top left;
+}
+
+.SCPanelHeaderText {
+    margin: 3px 5px auto 20px;
+    font-weight: bold;
+    color: #000000;
+    vertical-align: middle;
+    font-size: 11px;
+}
+
+.SCPanelBody {
+    background: transparent url('Images/Panel-Body-bg.png') repeat-x;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.SCSubPanelHeader {
+    height: 17px;
+    background: #E0E0E0 url('Images/Table-Header.gif') repeat-x;
+    color: #000000;
+    font-weight: bold;
+    font-size: 8pt;
+    padding: 3px 5px 0px 5px;
+}
+
+.SCSubPanelBody {
+    background: transparent url('Images/Panel-Body-bg.png') repeat-x;
+    padding: 5px;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+/* Points display control on the home page */
+.PointTable {
+    background: url('Images/BG-PointTable.gif');
+}
+
+.PointHeaderPOP {
+    background: url('Images/BG-PointPOP.png') repeat-x;
+    color: #FFFFFF;
+    height: 17px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+.PointHeaderKAR {
+    background: url('Images/BG-PointKAR.png') repeat-x;
+    color: #FFFFFF;
+    height: 17px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+.PointHeaderSEX {
+    background: url('Images/BG-PointSEX.png') repeat-x;
+    color: #FFFFFF;
+    height: 17px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+.PointHeaderFRI {
+    background: url('Images/BG-PointFRI.png') repeat-x;
+    color: #FFFFFF;
+    height: 17px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+.PointHeaderNULL {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 10px;
+    height: 17px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+.PointProgCell {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 10px;
+    height: 20px;
+}
+
+.PointProgBG {
+    background: url('Images/BG-Progress.png') repeat-x;
+    height: 16px;
+}
+
+.PointProgBar {
+    background: url('Images/BG-ProgBar.png') repeat-x;
+    height: 16px;
+}
+
+/* Anouncements control on the home page */
+.AnnItem {
+    font-weight: bold;
+    margin: 0px auto 2px auto;
+}
+
+.AnnSubItem {
+    margin: 0px auto 2px auto;
+}
+
+.AnnGroup {
+    font-weight: bold;
+    font-weight: bold;
+    margin: 2px auto 2px auto;
+}
+
+/* Ray account balance table on the home page */
+.AccountsType {
+    background: #333333 url('Images/BG-PointTable.gif');
+    padding: 1px 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+    border-bottom: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+}
+
+.AccountsBalance {
+    background: #990000;
+    color: #FFFFFF;
+    padding: 1px 5px;
+    font-weight: normal;
+    text-align: right;
+    width: 70px;
+    font-size: 10px;
+    border-bottom: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+}
+
+.AccountsInfo {
+    background: #666666;
+    color: #FFFFFF;
+    padding: 1px 5px;
+    font-weight: normal;
+    font-size: 10px;
+    border-bottom: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+}
+
+a.AccountsLink {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Badge Table on the home page */
+.BadgeTable {}
+
+.BadgeSelectCell {
+    padding: 1px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+.BadgeNameCell,
+.BadgeNoneCell {
+    background-color: #CCCCCC;
+    padding: 1px 5px;
+    width: 300px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    border-right: 1px solid #666666;
+}
+
+.BadgeNoneCell {
+    font-weight: bold;
+}
+
+/* message center */
+.MCItemLine {
+    margin: 0px 10px 6px 10px;
+}
+
+.MCBadge,
+.MCBadgeActive {
+    border-radius: 10px;
+    background-color: #777;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.MCBadgeActive {
+    background-color: #568e61;
+    color: #fff;
+}
+
+/* Profile Link Display Box */
+.PDispBox {
+    width: 110px;
+}
+
+.PDispUsername {
+    width: 100px;
+    padding: 1px 5px;
+    height: 14px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #999999 url('Images/BG-PDispHeader.gif') repeat-x;
+    border-bottom: 1px solid transparent;
+    text-align: center;
+}
+
+.PDispImage {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    background-color: #999999;
+    border-bottom: 1px solid transparent;
+    text-align: center;
+}
+
+.PDispOnlineSC {
+    width: 110px;
+    height: 16px;
+    background: #999999 url('Images/OnlineSC.png') no-repeat 5px 0px;
+    border-bottom: 1px solid transparent;
+}
+
+.PDispOfflineSC {
+    width: 110px;
+    height: 0px;
+    background: transparent;
+}
+
+.PDispOnline3D {
+    width: 110px;
+    height: 16px;
+    background: #999999 url('Images/Online3D.png') no-repeat 5px 0px;
+}
+
+.PDispOffline3D {
+    width: 110px;
+    height: 0px;
+    background: transparent;
+}
+
+a.PDispLink {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+a.PDispLink:link,
+a.PDispLink:active,
+a.PDispLink:visited {
+    color: #FFFFFF;
+}
+
+a.PDispLink:hover {
+    color: #FF0000;
+}
+
+/* Some basic link styles */
+a.SmallLink {
+    text-decoration: none;
+}
+
+a.SmallLink:link,
+a.SmallLink:active,
+a.SmallLink:visited {
+    color: #333333;
+}
+
+a.SmallLink:hover {
+    color: #FF0000;
+}
+
+a.HeavyLink {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.HeavyLink:link,
+a.HeavyLink:active,
+a.HeavyLink:visited {
+    color: #333333;
+}
+
+a.HeavyLink:hover {
+    color: #FF0000;
+}
+
+/* General Page Component Styles */
+.SCPageTitle {
+    height: 17px;
+    border-bottom: 2px solid #CCCCCC;
+    background: transparent url('Images/SCPageTitleTab.png') no-repeat left top;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 0px 0px 6px;
+}
+
+.SCPageHelp {
+    background: transparent url('Images/Panel-Body-bg.png') repeat-x;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+}
+
+.SCTableHeader {
+    height: 17px;
+    background: #E0E0E0 url('Images/Panel-Header-bg.png') repeat-x;
+    color: #000000;
+    font-weight: bold;
+    padding: 3px 5px 0px 5px;
+}
+
+.SCTableData {
+    border: 1px solid #E8E8E8;
+    padding: 0px 5px;
+}
+
+.SCTablePager {
+    background-color: #FFFFC0;
+    padding: 2px 0px 2px 0px;
+}
+
+.SCFormHeader {
+    height: 17px;
+    background: transparent url('Images/Table-Header.gif') repeat-x;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 3px 5px 0px 5px;
+}
+
+.SCFormDesc {
+    text-align: right;
+    padding: 2px 5px 2px 0px;
+    font-weight: bold;
+}
+
+.SCFormData {
+    text-align: left;
+    padding: 2px 5px 2px 5px;
+}
+
+/* Photo Album Styles */
+.PAAlbum {
+    border: 1px solid #333333;
+}
+
+.PASlot {
+    width: 120px;
+    height: 140px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: top;
+    position: relative;
+}
+
+.PASlotR {}
+
+.PANewSlot {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.PADefault {}
+
+.PAToolDiv {
+    height: 20px;
+    background: transparent url('Images/PA-Frame-Top.png') no-repeat;
+    color: #333333;
+    text-align: left;
+}
+
+.PAStarDiv {
+    height: 14px;
+    background: #bfbfbf url('Images/PA-Stars-BG.gif') repeat-x;
+    text-align: center;
+    font-size: 8pt;
+    color: #606060;
+}
+
+.PAImageDiv {
+    width: 120px;
+    height: 100px;
+    padding: 3px 0px;
+    overflow: hidden;
+    background: #c8bfc0 url('Images/PA-Frame-BG.gif');
+}
+
+.PAImageTable {
+    width: 120px;
+    height: 100px;
+}
+
+.PAImageCell {
+    width: 120px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.PAImage {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.PACCount {
+    height: 17px;
+    padding-top: 3px;
+    background: transparent url('Images/PA-Frame-Bottom.png') no-repeat;
+    color: #333333;
+    text-align: center;
+}
+
+.PACountData {
+    color: #2020A0;
+}
+
+.PANewCountData {
+    color: #A02020;
+}
+
+.PACaption {
+    text-align: center;
+    margin: 0px 4px 0px 4px;
+}
+
+.PAPosDefault {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    z-index: 10;
+}
+
+/* Relative to PAToolDiv */
+.PAPosIcons {
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 42px;
+    z-index: 10;
+}
+
+/* Relative to PAImageDiv */
+.PAPosCheck {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+.PAInfoCell {
+    height: 17px;
+    background: transparent url('Images/Table-Header.gif') repeat-x;
+    color: #000000;
+    font-weight: bold;
+    padding: 3px 5px 0px 5px;
+}
+
+.PAInfoData {
+    color: #FFFF60;
+}
+
+.PAToolsCell {
+    height: 20px;
+    font-weight: bold;
+    background: transparent url('Images/Panel-Body-bg.png') repeat-x;
+}
+
+.PAHelpCell {
+    height: 20px;
+    text-align: center;
+    background: transparent url('Images/Panel-Body-bg.png') repeat-x;
+}
+
+.PASelect {
+    height: 18px;
+    font-size: 10px;
+    border: 1px solid #5b4648;
+}
+
+.PAField {
+    height: 14px;
+    font-size: 9px;
+    border: 1px solid #5b4648;
+}
+
+.PAButton {
+    height: 18px;
+    font-size: 10px;
+}
+
+.PAPagerDark {
+    font-weight: bold;
+    font-size: 12px;
+    color: #606060;
+}
+
+a.PageLink {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+a.PageLink:link,
+a.PageLink:active,
+a.PageLink:visited {
+    color: #FFFFFF;
+}
+
+a.PageLink:hover {
+    color: #FFFF60;
+}
+
+.PAUploadFrame {
+    position: absolute;
+    z-index: 1;
+    top: 330px;
+    left: 100px;
+    width: 450px;
     display: none;
+    padding-bottom: 2px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #333333;
+    font: normal normal normal 11px Verdana;
 }
 
-/*contents*/
-table#MSCodesFixer>tbody>tr>td>table>tbody:first-of-type>tr>td>div:last-of-type,
-#ctl00_oCPH1_tbDetailsSection>tr>td>div:nth-last-of-type(3),
-#ctl00_oCPH1_pnlSexyStuff>div:last-of-type,
-#ctl00_oCPH1_pnlWebGifts,
-#ctl00_oCPH1_tbDetailsSection>tr>td:last-of-type>div:nth-of-type(4),
-#ctl00_oCPH1_tbFriendsSection>tr:nth-of-type(2)>td>div,
-#ctl00_oCPH1_tbCommentsSection>tr:nth-of-type(2)>td {
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 0 0 10px 10px;
-    margin-top: -1px !important;
-    background: none repeat scroll 0 0 #000
-    padding: 10px !important;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 -1px #000 inset 0 -10px rgba(255, 255, 255, 0.2), inset 0 -10px 20px #000 inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    -o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 -1px r#000 inset 0 -10px rgba(255, 255, 255, 0.2), inset 0 -10px 20px #000 inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 -1px #000 inset 0 -10px rgba(255, 255, 255, 0.2), inset 0 -10px 20px r#000 inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 -1px #000 inset 0 -10px rgba(255, 255, 255, 0.2), inset 0 -10px 20px #000 inset 0 -15px 30px rgba(0, 0, 0, 0.3);
-    color: #EEE;
-    text-shadow: 1px 1px r#000
+.MIUploadTitle {
+    height: 17px;
+    background: transparent url('Images/Table-Header.gif') repeat-x;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 3px 5px 0px 5px;
+    text-align: center;
 }
 
-#ctl00_oCPH1_pnlWebGifts {
-    border-radius: 5px;
-    padding: 0px !important;
+
+A.ELSortHeader:link {
+    color: #333333;
+    text-decoration: none;
 }
 
-div.MPToolsBar {
-    background: #000 !important;
-    border-radius: 5px;
+A.ELSortHeader:visited {
+    color: #333333;
+    text-decoration: none;
 }
 
-#ctl00_oCPH1_tbDetailsSection>tr>td>div img {
-    opacity: 0.8;
+A.ELSortHeader:active {
+    color: #333333;
+    text-decoration: none;
 }
 
-#ctl00_oCPH1_tblPComments>tbody>tr>td:last-of-type img {
-    max-width: 0px;
+A.ELSortHeader:hover {
+    color: #A00000;
+    text-decoration: none;
 }
-
-</style>
