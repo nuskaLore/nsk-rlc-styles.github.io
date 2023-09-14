@@ -26,7 +26,7 @@ body, a:hover {cursor: url(https://raw.githubusercontent.com/nuskaLore/nsk_icons
 
 /*img-radius*/
 img#ctl00_oCPH1_imgPicture {
-    border-radius: 100px;
+    border-radius: 2px;
 }
 
 #ctl00_oCPH1_lblInterests{
@@ -35,11 +35,11 @@ img#ctl00_oCPH1_imgPicture {
 
 img {
     border: 20px;
-    border-radius: 100px;
+    border-radius: 2px;
 }
 
 b {
-    font-color: #994b88;    
+    font-color: #ffffff;    
 }
 
 
@@ -127,7 +127,7 @@ table#MSCodesFixer>tbody>tr>td>table>tbody:first-of-type>tr>td>div:first-of-type
 #ctl00_oCPH1_tbFriendsSection>tr:first-of-type>td>div,
 #ctl00_oCPH1_tbCommentsSection>tr:first-of-type>td>div,
 div.MPToolsBar {
-    border-radius: 5px 5px 0 0;
+    border-radius: 2px 2px 0 0;
     padding-left: 15px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, 0.25) !important;
@@ -172,13 +172,13 @@ table#MSCodesFixer>tbody>tr>td>table>tbody:first-of-type>tr>td>div:last-of-type,
 }
 
 #ctl00_oCPH1_pnlWebGifts {
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 0px !important;
 }
 
 div.MPToolsBar {
     background: #000 !important;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 #ctl00_oCPH1_tbDetailsSection>tr>td>div img {
@@ -193,7 +193,7 @@ div.MPToolsBar {
 .div {
     margin: 10px;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, 0.25);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px #000, inset 0 10px rgba(255, 255, 255, 0.2), inset 0 10px 20px #000, inset 0 -15px 30px rgba(0, 0, 0, 0.3);
