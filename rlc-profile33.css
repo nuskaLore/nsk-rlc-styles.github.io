@@ -22,6 +22,7 @@ body {
     background-attachment: fixed;
 }
 
+body, a:hover {cursor: url(https://raw.githubusercontent.com/nuskaLore/nsk_icons/master/NSK-icon.ico), progress !important;}
 
 /*img-radius*/
 img#ctl00_oCPH1_imgPicture {
